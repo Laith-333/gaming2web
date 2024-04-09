@@ -1,0 +1,123 @@
+.all-Boxies { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+} 
+
+.per-Box { 
+  position: relative; 
+  width: 30%; 
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  background-color: transparent; 
+  transition: box-shadow 0.3s ease; 
+} 
+
+.per-Box:hover {
+  box-shadow: 0 0 20px 10px rgb(39, 253, 110); 
+}
+
+.pc, .console { 
+  width: 500px; 
+  height: 700px;
+  position: relative; 
+} 
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  background-color: transparent; 
+  padding: 10px;
+  text-align: center;
+  font-size: 40px; 
+  z-index: 0; 
+  transition: all 0.3s ease; 
+  opacity: 0; 
+}
+
+.per-Box:hover .centered-text {
+  opacity: 1; 
+}
+
+.per-Box:hover .pc, .per-Box:hover .console {
+  transform: scale(1.1); 
+}
+
+.pc img, .console img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  display: block; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #302b2b86;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-form button {
+  padding: 10px;
+  background-color: #ddd; 
+  color: black; 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #ccc; 
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; 
+  filter: blur(8px); 
+  -webkit-filter: blur(8px);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.all-Boxies, .navbar {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at -3.1% -4.3%, rgb(3, 241, 102) 0%, rgb(21, 38, 82) 90%);
+  
+}
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  .search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  .search-form button {
+    padding: 10px;
+    background-color: #ddd; 
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-form button:hover {
+    background-color: #ccc; 
+  }
+  
+  .product-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    border: 1px solid #0ae9e9;
+    width: 99%;
+    height: 160px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #151a17 
+  }
+  
+  
+
+  .product-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    border: 1px solid #0ae9e9;
+    width: 99%;
+    height: 160px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #272121; 
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  
+  .buy-button {
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px; 
+    background-color:#07f1a3;
+  }
+  
+  
+  
+  
+  
+
+
+
+
